@@ -1,0 +1,51 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    Ascii85 (1.0.2)
+    activesupport (4.2.5)
+      i18n (~> 0.7)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.3, >= 0.3.4)
+      tzinfo (~> 1.1)
+    afm (0.2.2)
+    hashery (2.1.1)
+    html_to_plain_text (1.0.4)
+      nokogiri (>= 1.4.0)
+    httpclient (2.7.0.1)
+    i18n (0.7.0)
+    json (1.8.3)
+    mini_portile (0.6.2)
+    minitest (5.8.3)
+    nokogiri (1.6.6.4)
+      mini_portile (~> 0.6.0)
+    pdf-reader (1.3.3)
+      Ascii85 (~> 1.0.0)
+      afm (~> 0.2.0)
+      hashery (~> 2.0)
+      ruby-rc4
+      ttfunk
+    ruby-rc4 (0.1.5)
+    scraperwiki (3.0.2)
+      httpclient
+      sqlite_magic
+    sqlite3 (1.3.11)
+    sqlite_magic (0.0.6)
+      sqlite3
+    thread_safe (0.3.5)
+    ttfunk (1.4.0)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activesupport
+  html_to_plain_text
+  nokogiri
+  pdf-reader
+  scraperwiki
+
+BUNDLED WITH
+   1.10.6
