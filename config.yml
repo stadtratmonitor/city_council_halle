@@ -1,4 +1,3 @@
 base_uri: http://buergerinfo.halle.de
-body: 'Quickborn'
 session_calendar_path: si0046.asp
 recent_papers_limit: 400
