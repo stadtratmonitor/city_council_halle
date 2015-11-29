@@ -105,7 +105,7 @@ class Paper < Page
   end
 
   def attributes
-    {
+    @attributes ||= {
       id: uri,
       url: uri,
       reference: reference,
@@ -129,7 +129,6 @@ calendar = Calendar.new(session_calendar_uri)
 calendar.session_uris.each do |uri|
   session = Session.new(uri)
   session.papers.each do |paper|
-    paper.attributes
     ScraperWiki.save_sqlite([:id], paper.attributes, 'data')
   end
 end
